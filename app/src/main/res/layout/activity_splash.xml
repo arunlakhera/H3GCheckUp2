@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context=".Activity.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_marginRight="@dimen/margin_x"
+            android:text="@string/company_name"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_marginRight="@dimen/margin_x"
+            android:alpha="0.8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/h3g_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

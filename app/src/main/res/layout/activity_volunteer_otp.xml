@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context=".Activity.VolunteerOTPActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/h3g_icon" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_Verify"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/bg_pattern"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activity.SignInActivity">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="@dimen/line_width"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4x"
+                android:background="@color/colorLineBlue" />
+
+            <TextView
+                android:id="@+id/textview_OTP_Title"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4x"
+                android:text="@string/otp_msg"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textinputlayout_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin_8x"
+                android:layout_marginLeft="@dimen/margin_8x"
+                android:layout_marginTop="@dimen/margin_4x"
+                android:layout_marginEnd="@dimen/margin_8x"
+                android:layout_marginRight="@dimen/margin_8x">
+
+                <EditText
+                    android:id="@+id/edittext_OTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_x"
+                    android:layout_marginLeft="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x"
+                    android:layout_marginBottom="@dimen/margin_x"
+                    android:hint="@string/enter_otp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="@dimen/text_medium" />
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_Verify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_signin_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_10x"
+        android:layout_marginLeft="@dimen/margin_10x"
+        android:layout_marginEnd="@dimen/margin_10x"
+        android:layout_marginRight="@dimen/margin_10x"
+        android:layout_marginBottom="@dimen/margin_8x"
+        android:background="@drawable/button_pink_round"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/text_medium" />
+</RelativeLayout>

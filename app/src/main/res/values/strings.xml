@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">H3GCheckUp</string>
+
+    <string name="company_name">Holy Himalayan Health Group Check Up</string>
+    <string name="why_become">Why become a Partner?</string>
+    <string name="phone_number">Enter Phone Number</string>
+    <string name="sign_in">Sign In / Sign Up</string>
+    <string name="terms_conditions">Accept Terms and Conditions</string>
+
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="otp_msg">Enter OTP sent to your Phone</string>
+    <string name="proceed">Proceed</string>
+    <string name="enter_detail_title">Please Enter your details below:</string>
+    <string name="first_name">First Name</string>
+    <string name="Last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="address">Address</string>
+    <string name="email">Email Id</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+
+    <string name="submit">Submit</string>
+    <string name="bank_msg">Please Enter your Bank Details where you wish to receive earnings from us:</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_acct">Account Number</string>
+    <string name="bank_ifsc">IFSC Code</string>
+    <string name="applicant_name">Applicant Name</string>
+
+    <string name="bank_note">The commission earned by you will be credited to this bank account once invoice verification is completed.</string>
+    <string name="total_customer">Total Customers</string>
+    <string name="welcome">Welcome</string>
+    <string name="in_progress">In Progress</string>
+    <string name="card_issued">Card Issued</string>
+    <string name="create_customer">Create Customer</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="allergies">Allergies</string>
+    <string name="genetic_label">Genetic Disorder</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cust_congrats_msg">Customer Registered Successfully</string>
+    <string name="volu_congrats_msg">Volunteer Registered Successfully</string>
+
+    <string name="make_payment">Make Payment</string>
+    <string name="payment_Detail">Payment Detail</string>
+    <string name="done">Done</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="customers_list">Customers List</string>
+
+    <string name="terms_cond_title">Our Terms and Conditions</string>
+    <string name="phone_num_error">Please Enter Phone Number!!</string>
+    <string name="phone_num_valid_error">Please Enter valid Phone Number!!</string>
+    <string name="term_cond_error">Please accept Terms and Conditions to continue.</string>
+    <string name="btn_agree">I Agree</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="why_partner_title">Why Partner With Us</string>
+    <string name="btn_ok">Ok</string>
+    <string name="pan_number">PAN Number</string>
+
+    <string name="gender">Gender</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_state">Select State</string>
+    <string name="select_bloodgroup">Select Blood Group</string>
+    <string name="select_geneticdisorder">Select Genetic Disorder</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_createcust">Create Customer</string>
+    <string name="menu_myearnings">My Earnings</string>
+    <string name="menu_myreferralcodes">My Referral Codes</string>
+    <string name="menu_generatecode">Generate Referral Code</string>
+    <string name="menu_shareapp">Share App</string>
+    <string name="menu_updateProfile">My Profile</string>
+
+    <string name="menu_logout">Logout</string>
+    <string name="contact_phone">+918393933555</string>
+    <string name="my_referral">My Referral Codes</string>
+    <string name="update_detail_title">View your detail here</string>
+    <string name="update">Update</string>
+
+    <string-array name="states_array">
+        <item>Select State</item>
+        <item>Assam</item>
+        <item>Arunanchal Pradesh</item>
+        <item>Andhra Pradesh</item>
+        <item>Bihar</item>
+        <item>Chattisgarh</item>
+        <item>Delhi</item>
+        <item>Gujarat</item>
+        <item>Goa</item>
+        <item>Haryana</item>
+        <item>Himanchal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Kerala</item>
+        <item>Maharashtra</item>
+        <item>Madhya Pradesh</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Telangana</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="bloodgroup_array">
+        <item>Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>0+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="geneticdisorder_array">
+        <item>No Disorder</item>
+        <item>Cystic Fibrosis</item>
+        <item>Sickle Cell Anemia</item>
+        <item>Marfan Syndrome</item>
+        <item>Huntington Disease</item>
+        <item>Hemochromatosis</item>
+        <item>Heart Disease</item>
+        <item>High Blood Pressure</item>
+        <item>Alzheimer Disease</item>
+        <item>Arthritis</item>
+        <item>Diabetes,</item>
+        <item>Cancer</item>
+        <item>Obesity</item>
+        <item>Epilepsy</item>
+        <item>Dementia</item>
+        <item>Multiple Disorders</item>
+        <item>Other Disorder</item>
+    </string-array>
+</resources>

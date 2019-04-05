@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/margin_x"
+        android:src="@drawable/pink_base" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_x"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_x"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_x"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_x"
+                    android:layout_marginRight="@dimen/margin_x"
+                    android:layout_marginBottom="@dimen/margin_x"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_3x"
+                        android:layout_marginRight="@dimen/margin_3x"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Name"
+                            android:textColor="@color/colorTextLabel"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/textview_CustomerName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="TEXT"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorTextWhite"
+                            android:textSize="@dimen/text_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_3x"
+                        android:layout_marginRight="@dimen/margin_3x"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Date Of Birth"
+                            android:textColor="@color/colorTextLabel"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/textview_CustomerDOB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="TEXT"
+                            android:textColor="@color/colorTextWhite"
+                            android:textSize="@dimen/text_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_3x"
+                        android:layout_marginRight="@dimen/margin_3x"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Email Id"
+                            android:textColor="@color/colorTextLabel"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/textview_CustomerEmailId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="TEXT"
+                            android:textColor="@color/colorTextWhite"
+                            android:textSize="@dimen/text_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_3x"
+                        android:layout_marginRight="@dimen/margin_3x"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Phone"
+                            android:textColor="@color/colorTextLabel"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/textview_CustomerPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="TEXT"
+                            android:textColor="@color/colorTextWhite"
+                            android:textSize="@dimen/text_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview_CustomerPhoto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/h3g_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_2x"
+                android:layout_marginLeft="@dimen/margin_2x"
+                android:layout_marginEnd="@dimen/margin_2x"
+                android:layout_marginRight="@dimen/margin_2x"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_CustomerStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_x"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="TEXT"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context=".Activity.CustomerStatusActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/h3g_icon" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bg_pattern"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activity.SignInActivity">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="@dimen/line_width"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4x"
+                android:background="@color/colorLineBlue" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_CustomerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5x"
+                android:divider="@color/colorAccent"
+                android:scrollbars="vertical" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

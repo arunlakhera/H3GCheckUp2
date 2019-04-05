@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_dashboard"
+        android:title="@string/menu_dashboard" />
+    <item
+        android:id="@+id/item_createCustomer"
+        android:title="@string/menu_createcust" />
+    <item
+        android:id="@+id/item_customerList"
+        android:title="@string/customers_list"
+        />
+    <item
+        android:id="@+id/item_myEarnings"
+        android:title="@string/menu_myearnings" />
+    <item
+        android:id="@+id/item_myReferralCodes"
+        android:title="@string/menu_myreferralcodes" />
+    <item
+        android:id="@+id/item_generateReferral"
+        android:title="@string/menu_generatecode" />
+    <item
+        android:id="@+id/item_updateProfile"
+        android:title="@string/menu_updateProfile" />
+    <item
+        android:id="@+id/item_shareApp"
+        android:title="@string/menu_shareapp" />
+    <item
+        android:id="@+id/item_logout"
+        android:title="@string/menu_logout" />
+
+</menu>

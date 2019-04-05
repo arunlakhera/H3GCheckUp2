@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.DashboardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_pattern">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_menu_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_Verify"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="@dimen/margin_4x"
+            android:background="@drawable/bg_pattern"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".Activity.SignInActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/company_name" />
+
+                <ImageView
+                    android:id="@+id/imageview_Logo"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/h3g_icon" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_below="@id/imageview_Logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:background="@color/colorLineBlue" />
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/welcome"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layout_total_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/welcome"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:background="@drawable/bg_rectangle">
+
+                    <TextView
+                        android:id="@+id/textview_TotalCustomers"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/total_customer"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_medium"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button_Refresh"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin_4x"
+                        android:layout_marginRight="@dimen/margin_4x"
+                        android:background="@drawable/refresh_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_In_Progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/layout_total_customer"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:src="@drawable/circle_yellow" />
+
+                    <TextView
+                        android:id="@+id/textview_InProgress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_4x"
+                        android:layout_marginLeft="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/in_progress"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_medium"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:src="@drawable/arrow_right" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line_in_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/layout_In_Progress"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/layout_Card_Issued"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line_in_progress"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:src="@drawable/circle_green" />
+
+                    <TextView
+                        android:id="@+id/textview_CardIssued"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_4x"
+                        android:layout_marginLeft="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/card_issued"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_medium"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:src="@drawable/arrow_right" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line_card_issued"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/layout_Card_Issued"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:background="@android:color/darker_gray" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_CreateCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_signin_height"
+            android:layout_above="@id/button_MyEarnings"
+            android:layout_marginStart="@dimen/margin_10x"
+            android:layout_marginLeft="@dimen/margin_10x"
+            android:layout_marginEnd="@dimen/margin_10x"
+            android:layout_marginRight="@dimen/margin_10x"
+            android:layout_marginBottom="@dimen/margin_8x"
+            android:background="@drawable/button_pink_round"
+            android:text="@string/create_customer"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_medium" />
+
+        <Button
+            android:id="@+id/button_MyEarnings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_signin_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10x"
+            android:layout_marginLeft="@dimen/margin_10x"
+            android:layout_marginEnd="@dimen/margin_10x"
+            android:layout_marginRight="@dimen/margin_10x"
+            android:layout_marginBottom="@dimen/margin_8x"
+            android:background="@drawable/button_flat_round"
+            android:text="@string/my_earnings"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_medium" />
+
+    </RelativeLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:elevation="2dp"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextAppearance="@drawable/pink_base"
+        app:itemTextColor="@color/colorTextBlack"
+        app:menu="@menu/nav_menu" />
+
+</android.support.v4.widget.DrawerLayout>

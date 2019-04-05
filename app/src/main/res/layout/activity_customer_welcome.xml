@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.CustomerWelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_pattern"
+        tools:context=".Activity.CustomerWelcomeActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:src="@drawable/h3g_icon" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_menu_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_Verify"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="@dimen/margin_4x"
+            android:background="@drawable/bg_pattern"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:background="@color/colorLineBlue" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:text="@string/cust_congrats_msg"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/smile" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_MakePayment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_signin_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10x"
+            android:layout_marginLeft="@dimen/margin_10x"
+            android:layout_marginEnd="@dimen/margin_10x"
+            android:layout_marginRight="@dimen/margin_10x"
+            android:layout_marginBottom="@dimen/margin_8x"
+            android:background="@drawable/button_pink_round"
+            android:text="@string/make_payment"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:elevation="2dp"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextAppearance="@drawable/pink_base"
+        app:itemTextColor="@color/colorTextBlack"
+        app:menu="@menu/nav_menu" />
+
+</android.support.v4.widget.DrawerLayout>

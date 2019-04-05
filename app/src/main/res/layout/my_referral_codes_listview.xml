@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pink_base"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4x"
+                android:layout_marginLeft="@dimen/margin_4x"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:text="Referral Code"
+                    android:textColor="@color/colorTextLabel"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/textview_ReferralCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:text="Uses Remaining"
+                    android:textColor="@color/colorTextLabel"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/textview_TotalUses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_Share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/margin_4x"
+                android:layout_marginRight="@dimen/margin_4x"
+                android:background="@drawable/share" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

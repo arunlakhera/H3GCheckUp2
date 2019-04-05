@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/h3g_icon" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_Submit"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/bg_pattern"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activity.VolunteerDetailActivity">
+
+            <LinearLayout
+                android:id="@+id/layout_Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4x"
+                android:layout_marginLeft="@dimen/margin_4x"
+                android:layout_marginEnd="@dimen/margin_4x"
+                android:layout_marginRight="@dimen/margin_4x"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_10x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:text="@string/bank_msg"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:background="@color/colorLineBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_Top"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_2x"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_ApplicantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_x">
+
+                    <EditText
+                        android:id="@+id/edittext_ApplicantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/applicant_name"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_BankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_x">
+
+                    <EditText
+                        android:id="@+id/edittext_BankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/bank_name"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_AccountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_x">
+
+                    <EditText
+                        android:id="@+id/edittext_AccountNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/bank_acct"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_IFSCCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_x">
+
+                    <EditText
+                        android:id="@+id/edittext_IFSCCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/bank_ifsc"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_6x"
+                    android:layout_marginLeft="@dimen/margin_6x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_6x"
+                    android:layout_marginRight="@dimen/margin_6x"
+                    android:layout_marginBottom="@dimen/margin_x"
+                    android:text="Please Note"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_6x"
+                    android:layout_marginLeft="@dimen/margin_6x"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_6x"
+                    android:layout_marginRight="@dimen/margin_6x"
+                    android:layout_marginBottom="@dimen/margin_x"
+                    android:text="@string/bank_note" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_signin_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_10x"
+        android:layout_marginLeft="@dimen/margin_10x"
+        android:layout_marginTop="@dimen/margin_4x"
+        android:layout_marginEnd="@dimen/margin_10x"
+        android:layout_marginRight="@dimen/margin_10x"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/button_pink_round"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/text_medium" />
+</RelativeLayout>

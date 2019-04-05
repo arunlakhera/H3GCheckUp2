@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/h3g_icon" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_Proceed"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/bg_pattern"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activity.VolunteerDetailActivity">
+
+            <ImageView
+                android:id="@+id/imageview_UserPhoto"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_8x"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_photo_default" />
+
+            <Button
+                android:id="@+id/button_Camera"
+                android:layout_width="@dimen/camera_width"
+                android:layout_height="@dimen/camera_height"
+                android:layout_below="@id/imageview_UserPhoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4x"
+                android:background="@drawable/camera" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button_Proceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_signin_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_10x"
+        android:layout_marginLeft="@dimen/margin_10x"
+        android:layout_marginTop="@dimen/margin_4x"
+        android:layout_marginEnd="@dimen/margin_10x"
+        android:layout_marginRight="@dimen/margin_10x"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/button_pink_round"
+        android:text="@string/proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/text_medium" />
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_pattern"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Activity.SignInActivity">
+
+            <LinearLayout
+                android:id="@+id/layout_Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_x"
+                    android:layout_marginRight="@dimen/margin_x"
+                    android:text="@string/company_name"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_marginEnd="@dimen/margin_x"
+                    android:layout_marginRight="@dimen/margin_x"
+                    android:alpha="0.8"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/h3g_icon" />
+
+                <TextView
+                    android:id="@+id/textview_WhyPartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_x"
+                    android:layout_marginLeft="@dimen/margin_x"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_x"
+                    android:layout_marginRight="@dimen/margin_x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:text="@string/why_become"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:background="@color/colorLineBlue" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinputlayout_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8x"
+                    android:layout_marginLeft="@dimen/margin_8x"
+                    android:layout_marginTop="@dimen/margin_8x"
+                    android:layout_marginEnd="@dimen/margin_8x"
+                    android:layout_marginRight="@dimen/margin_8x">
+
+                    <EditText
+                        android:id="@+id/edittext_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_x"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_x"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button_SignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_signin_height"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:background="@drawable/button_pink_round"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/text_medium" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_AcceptTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10x"
+                    android:layout_marginLeft="@dimen/margin_10x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_10x"
+                    android:layout_marginRight="@dimen/margin_10x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:text="@string/terms_conditions" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

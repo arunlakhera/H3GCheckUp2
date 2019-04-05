@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context=".Activity.CreateCustomerActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_layout" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/h3g_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_Submit"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/margin_2x"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4x"
+                android:layout_marginLeft="@dimen/margin_4x"
+                android:layout_marginEnd="@dimen/margin_4x"
+                android:layout_marginRight="@dimen/margin_4x"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_PayDetail_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:gravity="center"
+                    android:text="@string/create_customer"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:background="@color/colorLineBlue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2x"
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textinput_FirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_x"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_x"
+                        android:layout_marginRight="@dimen/margin_x"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edittext_FirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_x"
+                            android:layout_marginLeft="@dimen/margin_x"
+                            android:layout_marginEnd="@dimen/margin_x"
+                            android:layout_marginRight="@dimen/margin_x"
+                            android:layout_marginBottom="@dimen/margin_x"
+                            android:hint="@string/first_name"
+                            android:inputType="text"
+                            android:textSize="@dimen/text_medium" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textinputlayout_LastName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_x"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_x"
+                        android:layout_marginRight="@dimen/margin_x"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edittext_LastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_x"
+                            android:layout_marginLeft="@dimen/margin_x"
+                            android:layout_marginEnd="@dimen/margin_x"
+                            android:layout_marginRight="@dimen/margin_x"
+                            android:layout_marginBottom="@dimen/margin_x"
+                            android:hint="@string/Last_name"
+                            android:inputType="text"
+                            android:textSize="@dimen/text_medium" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinputlayout_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2x"
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x">
+
+                    <EditText
+                        android:id="@+id/edittext_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_x"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_x"
+                        android:layout_marginRight="@dimen/margin_x"
+                        android:layout_marginBottom="@dimen/margin_x"
+                        android:hint="@string/phone"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:gravity="center"
+                    android:text="@string/gender" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_Male"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_x"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:layout_marginTop="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_4x"
+                        android:layout_marginRight="@dimen/margin_4x"
+                        android:layout_marginBottom="@dimen/margin_x"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_flat_round_s"
+                        android:gravity="center"
+                        android:text="@string/male"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextBlack"
+                        android:textFontWeight="1"
+                        android:textSize="@dimen/text_small" />
+
+                    <Button
+                        android:id="@+id/button_Female"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_4x"
+                        android:layout_marginLeft="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_x"
+                        android:layout_marginRight="@dimen/margin_x"
+                        android:layout_marginBottom="@dimen/margin_x"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_flat_round_s"
+                        android:gravity="center"
+                        android:text="@string/female"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_4x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:gravity="center"
+                    android:text="@string/date_of_birth"
+                    android:textSize="@dimen/text_small" />
+
+                <LinearLayout
+                    android:id="@+id/layout_DateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginTop="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:rotation="90"
+                        android:src="@drawable/arrow_right" />
+
+                    <TextView
+                        android:id="@+id/textview_DateOfBirth"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginTop="@dimen/margin_x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/select_date"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_medium" />
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:src="@drawable/calendar" />
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinputlayout_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2x"
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x">
+
+                    <EditText
+                        android:id="@+id/edittext_Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/address"
+                        android:inputType="text"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2x"
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textinput_City"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edittext_City"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_x"
+                            android:layout_marginLeft="@dimen/margin_x"
+                            android:layout_marginEnd="@dimen/margin_x"
+                            android:layout_marginRight="@dimen/margin_x"
+                            android:layout_marginBottom="@dimen/margin_x"
+                            android:hint="@string/city"
+                            android:inputType="text"
+                            android:textSize="@dimen/text_small" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_State"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_weight="1.5">
+
+                        <!-- Spinner Element -->
+                        <Spinner
+                            android:id="@+id/spinner_State"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_x"
+                            android:gravity="start|center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinputlayout_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2x"
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_2x"
+                    android:layout_marginRight="@dimen/margin_2x">
+
+                    <EditText
+                        android:id="@+id/edittext_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_2x"
+                        android:layout_marginLeft="@dimen/margin_2x"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_marginBottom="@dimen/margin_2x"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/text_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_BloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_x"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/blood_group" />
+
+                    <Spinner
+                        android:id="@+id/spinner_BloodGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_x"
+                        android:layout_weight="1.5"
+                        android:gravity="start|center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_x"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/genetic_label" />
+
+                    <Spinner
+                        android:id="@+id/spinner_GeneticDisorder"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_2x"
+                        android:layout_marginRight="@dimen/margin_2x"
+                        android:layout_weight="1.5"
+                        android:gravity="start|center" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_Allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4x"
+                    android:layout_marginLeft="@dimen/margin_4x"
+                    android:layout_marginTop="@dimen/margin_2x"
+                    android:layout_marginEnd="@dimen/margin_4x"
+                    android:layout_marginRight="@dimen/margin_4x"
+                    android:layout_marginBottom="@dimen/margin_4x"
+                    android:hint="@string/allergies"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/text_medium" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_signin_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_10x"
+        android:layout_marginLeft="@dimen/margin_10x"
+        android:layout_marginEnd="@dimen/margin_10x"
+        android:layout_marginRight="@dimen/margin_10x"
+        android:layout_marginBottom="@dimen/margin_4x"
+        android:background="@drawable/button_pink_round"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/text_medium" />
+
+</RelativeLayout>
